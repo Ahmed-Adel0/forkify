@@ -1,0 +1,53 @@
+.search-results {
+  padding: 3rem 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.results {
+  list-style: none;
+  margin-bottom: 2rem;
+}
+
+.numPages {
+  margin-top: auto;
+  padding: 2 3.5rem;
+  text-transform: uppercase;
+  color: $color-grey-dark-1;
+  font-size: 1.5rem;
+  font-weight: 600;
+  line-height: 2;
+  margin-left: auto;
+}
+
+.pagination {
+  margin-top: auto;
+  padding: 0 3.5rem;
+
+  &::after {
+    content: '';
+    display: table;
+    clear: both;
+  }
+
+  &__btn {
+    &--prev {
+      float: left;
+    }
+    &--next {
+      float: right;
+    }
+  }
+}
+
+.copyright {
+  color: $color-grey-dark-2;
+  font-size: 1.2rem;
+  padding: 0 3.5rem;
+  margin-top: 4rem;
+
+  .twitter-link:link,
+  .twitter-link:visited {
+    color: $color-grey-dark-2;
+  }
+}
